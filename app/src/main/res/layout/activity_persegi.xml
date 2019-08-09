@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Persegi"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Rumus" />
+
+    <TextView
+        android:layout_marginTop="1dp"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Luas Persegi  : s x s" />
+
+
+    <EditText
+        android:id="@+id/txtsisi"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:hint="Masukkan sisi"
+        android:inputType="number" />
+
+
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/txthasilPersegi"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="9dp"
+        android:text="Hasil :"
+        android:textSize="20dp" />
+
+
+
+
+    <Button
+        android:id="@+id/btnLuasPersegi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/colorAccent"
+        android:text="Luas Persegi " />
+
+
+
+
+</LinearLayout>

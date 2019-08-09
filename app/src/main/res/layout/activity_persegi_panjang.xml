@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PersegiPanjang"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Rumus" />
+
+    <TextView
+        android:layout_marginTop="1dp"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:text="Luas Persegi Panjang : p x l" />
+
+
+    <EditText
+        android:id="@+id/panjang"
+        android:layout_width="352dp"
+        android:layout_height="61dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:hint="Masukkan Panjang"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/lebar"
+        android:layout_width="352dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="30dp"
+        android:hint="Masukkan Lebar"
+        android:inputType="number" />
+
+
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/txthasilP"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="9dp"
+        android:textSize="20dp"
+        android:text="Hasil :"
+       />
+
+
+
+    <Button
+        android:id="@+id/btnLuasP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/colorAccent"
+        android:text="Luas Persegi Panjang" />
+
+
+
+
+
+
+</LinearLayout>

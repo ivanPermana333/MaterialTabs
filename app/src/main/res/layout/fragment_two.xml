@@ -8,44 +8,64 @@
 
     <LinearLayout
         android:layout_width="384dp"
-        android:layout_height="wrap_content"
+        android:layout_height="97dp"
         android:orientation="horizontal">
 
+
         <Button
-            android:id="@+id/btnpersegi"
+            android:id="@+id/btnPersegi"
             android:layout_width="142dp"
             android:layout_height="102dp"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="50dp"
-            android:hint="Persegi"
-            android:drawableLeft="@drawable/ic_crop_din_black_24dp"/>
+            android:background="@color/c2"
+            android:drawableLeft="@drawable/ic_crop_din_black_24dp"
+            android:text="Persegi"
+            android:textColor="@color/textColorPrimary"
+
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnsegitiga"
             android:layout_width="142dp"
             android:layout_height="102dp"
-            android:layout_marginLeft="5dp"
-            android:hint="Segitiga" />
+            android:background="@color/c5"
+            android:drawableLeft="@drawable/ic_change_history_black_24dp"
+
+            android:text="Segitiga"
+            android:textColor="@color/textColorPrimary"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
     <LinearLayout
+
         android:layout_width="386dp"
-        android:layout_height="wrap_content"
+        android:layout_height="95dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnlingkaran"
             android:layout_width="142dp"
             android:layout_height="102dp"
-            android:layout_marginLeft="50dp"
-            android:hint="Lingkaran" />
+            android:layout_marginLeft="51dp"
+            android:background="@color/c4"
+            android:drawableLeft="@drawable/ic_radio_button_unchecked_black_24dp"
+            android:text="Lingkaran"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="13dp"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnjajargenjang"
+            android:id="@+id/btnpersegipanjang"
             android:layout_width="142dp"
-            android:layout_height="102dp"
-            android:layout_marginLeft="5dp"
-            android:hint="Jajargenjang" />
+            android:layout_height="105dp"
+            android:layout_marginTop="-10dp"
+            android:background="@color/c3"
+            android:drawableLeft="@drawable/ic_crop_7_5_black_24dp"
+            android:text="Persegi Panjang"
+            android:textColor="@color/textColorPrimary"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

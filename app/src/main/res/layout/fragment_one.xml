@@ -6,22 +6,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
 
     <EditText
         android:id="@+id/txtangka1"
         android:layout_width="match_parent"
-        android:layout_height="67dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:hint="Angka 1"
         android:inputType="number" />
 
     <EditText
         android:id="@+id/txtangka2"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:hint="Angka 2"
         android:inputType="number" />
 
@@ -29,61 +29,71 @@
     <TextView
         android:id="@+id/txthasil"
         android:layout_width="match_parent"
-        android:layout_height="111dp"
-        android:text="Hasil" />
+        android:layout_height="67dp"
+        android:layout_margin="50dp"
+        android:text="Hasil"
+        android:textSize="20dp"/>
 
     <LinearLayout
 
         android:layout_width="wrap_content"
-        android:layout_height="158dp"
+        android:layout_height="wrap_content"
         android:layout_margin="50dp"
         android:orientation="horizontal">
 
+
         <Button
             android:id="@+id/btnplus"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="+"
-            android:textSize="@android:dimen/app_icon_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_button"
+            android:text="+ "
+            android:textColor="@color/colorAccent" />
 
-            />
 
         <Button
             android:id="@+id/btnkali"
-            android:layout_width="150dp"
-            android:layout_height="158dp"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_button"
             android:text="x"
-            android:textSize="@android:dimen/app_icon_size" />
+            android:textColor="@color/colorAccent" />
 
 
     </LinearLayout>
 
 
     <LinearLayout
-        android:layout_width="302dp"
-        android:layout_height="148dp"
-        android:layout_margin="50dp"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-20dp"
         android:orientation="horizontal"
 
 
         >
+
+
         <Button
             android:id="@+id/btnminus"
-            android:layout_width="150dp"
-            android:layout_height="148dp"
-
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_button"
             android:text="-"
-            android:textSize="@android:dimen/app_icon_size" />
+            android:textColor="@color/colorAccent" />
 
 
         <Button
             android:id="@+id/btnbagi"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom_button"
             android:text="/"
-            android:textSize="@android:dimen/app_icon_size" />
+            android:textColor="@color/colorAccent" />
 
     </LinearLayout>
 

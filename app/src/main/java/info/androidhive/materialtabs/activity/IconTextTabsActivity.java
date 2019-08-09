@@ -54,8 +54,8 @@ public class IconTextTabsActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new OneFragment(), "Kalkulator");
-        adapter.addFrag(new TwoFragment(), "TWO");
-        adapter.addFrag(new ThreeFragment(), "THREE");
+        adapter.addFrag(new TwoFragment(), "Bangun Datar");
+        adapter.addFrag(new ThreeFragment(), "Bangun Ruang");
         viewPager.setAdapter(adapter);
     }
 
