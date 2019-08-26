@@ -7,7 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/MyMaterialTheme">
-        <activity android:name=".Lingkaran"></activity>
+        <activity android:name=".Lingkaran" />
         <activity android:name=".Persegi" />
         <activity android:name=".activity.PersegiPanjang" />
         <activity android:name=".activity.Segitiga" />
