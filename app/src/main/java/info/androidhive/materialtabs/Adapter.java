@@ -35,6 +35,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MahasiswaViewHolder> {
         holder.txtKeliling.setText(dataList.get(position).getKeliling());
     }
 
+
+
+
     @Override
     public int getItemCount() {
         return (dataList != null) ? dataList.size() : 0;
@@ -49,6 +52,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MahasiswaViewHolder> {
             txtLuas = (TextView) itemView.findViewById(R.id.txtLuas);
             txtVolume = (TextView) itemView.findViewById(R.id.txtVolume);
             txtKeliling = (TextView) itemView.findViewById(R.id.txtKeliling);
+
         }
     }
 }

@@ -13,16 +13,32 @@ import android.widget.Button;
 import java.util.ArrayList;
 
 import info.androidhive.materialtabs.Adapter;
+
 import info.androidhive.materialtabs.R;
+import info.androidhive.materialtabs.Bangun;
 import info.androidhive.materialtabs.activity.BangunRuang;
 import info.androidhive.materialtabs.activity.MainActivity;
 import info.androidhive.materialtabs.activity.Segitiga;
 
 
-public class ThreeFragment extends Fragment{
+public class ThreeFragment<BangunRuangArraylist> extends Fragment{
     private RecyclerView recyclerView;
     private Adapter adapter;
     private ArrayList<BangunRuang> BangunRuangArraylist;
+    private String[]name={
+            "KUBUS",
+            "BALOK",
+            "TABUNG",
+            "KERUCUT"
+
+
+    };
+    private int[]photo={
+            R.drawable.beam,
+            R.drawable.cone,
+            R.drawable.cube,
+            R.drawable.tabung,
+    };
 
     public ThreeFragment() {
         // Required empty public constructor
@@ -60,10 +76,11 @@ public class ThreeFragment extends Fragment{
         BangunRuangArraylist.add(new BangunRuang("Balok", "Volume balok V = Panjang x lebar x tinggi atau V = p x l x t.", "Luas :(2 x p x l) + (2 x p x t) + (2 x l x t)"));
         BangunRuangArraylist.add(new BangunRuang("Prisma Segitiga", "Luas permukaannya = keliling alas segitiga x tinggi + (2 x luas alas segitiga).", "Volume prisma segitiga V= Luas alas segitiga x tinggi"));
         BangunRuangArraylist.add(new BangunRuang("Limas Segiempat", "Luas permukaannya luas permukaan limas segiempat = luas alas + luas selubung limas.", "Volume limas V = 1/3 x luas alas x tinggi atau V = 1/3 x p x l x t."));
-    }
 
 
 
+
+        }
 
 
 
